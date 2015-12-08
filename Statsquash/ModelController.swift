@@ -30,19 +30,18 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         pageData = dateFormatter.monthSymbols
     }
 
-    func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
+    func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> MatchPlay? {
         // Return the data view controller for the given index.
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
 
         // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]
+        let dataViewController = storyboard.instantiateViewControllerWithIdentifier("MatchPlay") as! MatchPlay; dataViewController.dataObject = self.pageData[index]
         return dataViewController
     }
 
-    func indexOfViewController(viewController: DataViewController) -> Int {
+    func indexOfViewController(viewController: MatchPlay) -> Int {
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
         return pageData.indexOf(viewController.dataObject) ?? NSNotFound
@@ -51,7 +50,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! DataViewController)
+        var index = self.indexOfViewController(viewController as! MatchPlay)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
@@ -61,7 +60,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! DataViewController)
+        var index = self.indexOfViewController(viewController as! MatchPlay)
         if index == NSNotFound {
             return nil
         }

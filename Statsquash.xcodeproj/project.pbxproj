@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		CDAF4D471C1717B700003779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D461C1717B700003779 /* AppDelegate.swift */; };
 		CDAF4D491C1717B700003779 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D481C1717B700003779 /* RootViewController.swift */; };
-		CDAF4D4B1C1717B700003779 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D4A1C1717B700003779 /* DataViewController.swift */; };
+		CDAF4D4B1C1717B700003779 /* MatchPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D4A1C1717B700003779 /* MatchPlay.swift */; };
 		CDAF4D4D1C1717B700003779 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D4C1C1717B700003779 /* ModelController.swift */; };
 		CDAF4D501C1717B700003779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF4D4E1C1717B700003779 /* Main.storyboard */; };
 		CDAF4D521C1717B700003779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDAF4D511C1717B700003779 /* Assets.xcassets */; };
 		CDAF4D551C1717B700003779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF4D531C1717B700003779 /* LaunchScreen.storyboard */; };
 		CDAF4D601C1717B700003779 /* StatsquashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D5F1C1717B700003779 /* StatsquashTests.swift */; };
 		CDAF4D6B1C1717B700003779 /* StatsquashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D6A1C1717B700003779 /* StatsquashUITests.swift */; };
+		CDAF4D791C1717CE00003779 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D781C1717CE00003779 /* main.swift */; };
+		CDAF4D7B1C1717D800003779 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D7A1C1717D800003779 /* Player.swift */; };
+		CDAF4D7D1C1717E300003779 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D7C1C1717E300003779 /* HelperFunctions.swift */; };
+		CDAF4D7F1C1717EA00003779 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D7E1C1717EA00003779 /* Game.swift */; };
+		CDAF4D811C1717F500003779 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D801C1717F500003779 /* Points.swift */; };
+		CDAF4D831C1717FF00003779 /* WonPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D821C1717FF00003779 /* WonPoints.swift */; };
+		CDAF4D851C17180D00003779 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D841C17180D00003779 /* Match.swift */; };
+		CDAF4D871C17181800003779 /* LostPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4D861C17181800003779 /* LostPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 		CDAF4D431C1717B700003779 /* Statsquash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statsquash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF4D461C1717B700003779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAF4D481C1717B700003779 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		CDAF4D4A1C1717B700003779 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		CDAF4D4A1C1717B700003779 /* MatchPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPlay.swift; sourceTree = "<group>"; };
 		CDAF4D4C1C1717B700003779 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		CDAF4D4F1C1717B700003779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDAF4D511C1717B700003779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,14 @@
 		CDAF4D661C1717B700003779 /* StatsquashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatsquashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF4D6A1C1717B700003779 /* StatsquashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsquashUITests.swift; sourceTree = "<group>"; };
 		CDAF4D6C1C1717B700003779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDAF4D781C1717CE00003779 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CDAF4D7A1C1717D800003779 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CDAF4D7C1C1717E300003779 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		CDAF4D7E1C1717EA00003779 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		CDAF4D801C1717F500003779 /* Points.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		CDAF4D821C1717FF00003779 /* WonPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonPoints.swift; sourceTree = "<group>"; };
+		CDAF4D841C17180D00003779 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		CDAF4D861C17181800003779 /* LostPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +119,20 @@
 			children = (
 				CDAF4D461C1717B700003779 /* AppDelegate.swift */,
 				CDAF4D481C1717B700003779 /* RootViewController.swift */,
-				CDAF4D4A1C1717B700003779 /* DataViewController.swift */,
+				CDAF4D4A1C1717B700003779 /* MatchPlay.swift */,
 				CDAF4D4C1C1717B700003779 /* ModelController.swift */,
 				CDAF4D4E1C1717B700003779 /* Main.storyboard */,
 				CDAF4D511C1717B700003779 /* Assets.xcassets */,
 				CDAF4D531C1717B700003779 /* LaunchScreen.storyboard */,
 				CDAF4D561C1717B700003779 /* Info.plist */,
+				CDAF4D781C1717CE00003779 /* main.swift */,
+				CDAF4D7A1C1717D800003779 /* Player.swift */,
+				CDAF4D7E1C1717EA00003779 /* Game.swift */,
+				CDAF4D821C1717FF00003779 /* WonPoints.swift */,
+				CDAF4D841C17180D00003779 /* Match.swift */,
+				CDAF4D861C17181800003779 /* LostPoints.swift */,
+				CDAF4D7C1C1717E300003779 /* HelperFunctions.swift */,
+				CDAF4D801C1717F500003779 /* Points.swift */,
 			);
 			path = Statsquash;
 			sourceTree = "<group>";
@@ -265,10 +289,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAF4D7D1C1717E300003779 /* HelperFunctions.swift in Sources */,
+				CDAF4D811C1717F500003779 /* Points.swift in Sources */,
 				CDAF4D491C1717B700003779 /* RootViewController.swift in Sources */,
+				CDAF4D791C1717CE00003779 /* main.swift in Sources */,
 				CDAF4D4D1C1717B700003779 /* ModelController.swift in Sources */,
-				CDAF4D4B1C1717B700003779 /* DataViewController.swift in Sources */,
+				CDAF4D831C1717FF00003779 /* WonPoints.swift in Sources */,
+				CDAF4D871C17181800003779 /* LostPoints.swift in Sources */,
+				CDAF4D4B1C1717B700003779 /* MatchPlay.swift in Sources */,
+				CDAF4D7B1C1717D800003779 /* Player.swift in Sources */,
+				CDAF4D851C17180D00003779 /* Match.swift in Sources */,
 				CDAF4D471C1717B700003779 /* AppDelegate.swift in Sources */,
+				CDAF4D7F1C1717EA00003779 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
